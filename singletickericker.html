@@ -18,18 +18,12 @@
               var iframe = document.createElement('iframe')
               iframe.setAttribute(
                   'src',
-                  `https://s.tradingview.com/tv#{
+                  `https://s.tradingview.com/embed-widget/single-quote#{
                   "symbol":"${symbol}",
-                  "autosize": true,
-                  "interval": "D",
-                  "timezone": "Etc/UTC",
-                  "theme": "dark",
-                  "style": "1",
-                  "locale": "en",
-                  "toolbar_bg": "#f1f3f6",
-                  "enable_publishing": false,
-                  "allow_symbol_change": true,
-                  "container_id": "tradingview_5a698",
+                  "width": "350",
+                  "colorTheme": "dark",
+                  "isTransparent": false,
+                  "locale": "en"}`,
               );
               iframe.setAttribute('frameborder', 0)
               iframe.setAttribute('style', 'box-sizing: border-box; height: 100%; width: 100%;')
